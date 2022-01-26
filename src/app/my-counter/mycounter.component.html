@@ -1,0 +1,13 @@
+<h1>Mycounter works</h1>
+
+<div>
+  <h3>Counter data is {{ counterWO }}</h3>
+
+  <div>
+    <button (click)="Increment()">Increment by 1</button>
+    <button (click)="reset()">Reset counter</button>
+    <br />
+    <input type="number" #data />
+    <button (click)="Incrementwithnumber(data.value)">Increment by x</button>
+  </div>
+</div>

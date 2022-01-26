@@ -1,0 +1,30 @@
+<hello name="{{ name }}"></hello>
+
+<div>
+  <counter-component></counter-component>
+</div>
+
+<h1>NGRX implementation</h1>
+<div>
+  <div>
+    <h3>
+      Counter data is {{ counterNGRX$ | async }} and {{ tempdata$ | async }}
+    </h3>
+
+    <div>
+      <button (click)="IncrementNGRX()">Increment by 1</button>
+      <button (click)="ResetNGRX()">Reset counter</button>
+      <br />
+      <input type="number" #data1 />
+      <button (click)="IncrementwithNumberNGRX(data1.value)">
+        Increment by x
+      </button>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<div>
+  <my-name></my-name>
+</div>

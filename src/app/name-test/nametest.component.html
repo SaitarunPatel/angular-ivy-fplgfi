@@ -1,0 +1,17 @@
+<h1>Nametest is working</h1>
+
+Fname: <input type="text" #data1 />
+<br />
+Lname: <input type="text" #data2 />
+<br />
+<button (click)="getdetails(data1.value, data2.value)">Get Details</button>
+
+<div>
+<h1>Fname is: {{ (nameData$ | async).Fname }}</h1>
+<h1>lname is: {{(nameData$ | async).Lname}}</h1>
+</div>
+
+<div>
+  <h1>Fname is: {{DisplayName.Fname}}</h1>
+  <h1>lname is: {{DisplayName.Lname}}</h1>
+</div>
