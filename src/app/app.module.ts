@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { Mycounter } from './my-counter/mycounter.component';
 import { NameTest } from './name-test/nametest.component';
+import { LoginTest } from './login-test/login.component' 
 
 import { CounterReducer } from './states/counter/counter.reducer';
 // import { DataCounter } from './states/counter/DataCounter.reducer'
@@ -19,7 +20,7 @@ import { StoreModule } from '@ngrx/store';
     FormsModule,
     StoreModule.forRoot({ CounterSt: CounterReducer , NamaTest: DataGet}),
   ],
-  declarations: [AppComponent, HelloComponent, Mycounter, NameTest],
+  declarations: [AppComponent, HelloComponent, Mycounter, NameTest, LoginTest],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
